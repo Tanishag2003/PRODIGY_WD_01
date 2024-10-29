@@ -1,0 +1,80 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+    overflow-x: hidden;
+  }
+  
+  /* Sidebar Styles */
+  .sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 20px 0;
+  }
+  
+  .sidebar ul li {
+    margin: 20px 0;
+  }
+  
+  .sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .sidebar ul li a:hover {
+    background-color: #ffcc00;
+    color: #333;
+  }
+  
+  /* Content Styles */
+  .content {
+    margin-left: 200px;
+    padding: 20px;
+    width: 100%;
+  }
+  
+  section {
+    height: 100vh;
+    padding: 50px;
+    background-color: #dea4a4;
+  }
+  
+  #about {
+    background-color: #8cc06f;
+  }
+  
+  #services {
+    background-color: #ea89b9;
+  }
+  
+  #contact {
+    background-color: #676dce;
+  }
+  
+  /* Sidebar change on scroll */
+  .sidebar.scrolled {
+    background-color: #555;
+  }
+  
